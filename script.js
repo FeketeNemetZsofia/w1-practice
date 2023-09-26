@@ -1,6 +1,10 @@
-console.log("Hello World!")
+function namePrinter(name) {
+    console.log(name)
+}
 
-let myName = "Német Zsófia" //születési név
-console.log(myName)
-let myMarriedName = "Fekete-" //házas név
-console.log(myMarriedName + myName)
+function marriedNameGenerator(fianceName, maidenName) {
+    let marriedName = fianceName + maidenName
+        return marriedName
+}
+
+namePrinter(marriedNameGenerator("Fekete-", "Német Zsófia"))
