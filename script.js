@@ -1,31 +1,24 @@
-let variable1 = "string"
-let variable2 = 2
-let variable3 = true
-let variable4 = null
+let claymore = ["Alicia", "Beth", "Clare", "Claudia", "Unnamed", "Cynthia", "Deneve", "Diana", "Elena", "Eliza", "Emelia", "Eva", "Flora", "Galatea", "Helen", "Hilda", "Jean", "Juliana", "Karla", "Kate", "Katea", "Lily", "Lucia", "Matilda", "Miria", "Natalie", "Ophelia", "Pamela", "Queenie", "Rafaela", "Raquel", "Tabitha", "Undine", "Unnamed", "Veronica", "Wendy", "Yuma", "Zelda"]
 
-let variableArray = ["alma", "barack", "szilva", "vegyes"];
-let variableArray2 = [1, 2, 3];
-let variableArray3 = ["autó", true, 62, null];
-let variableArray4 = [variable1, variable2, variable3]
+let statusMember = ["Dead", "Dead", "Alive", "Dead", "Unknown", "Alive", "Alive", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Alive", "Alive", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Alive", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Dead", "Alive", "Dead"]
 
-console.log(variableArray3[2])
+//console.log(claymore.length)
+//console.log(statusMember.length) // Checking lenght
 
-variableArray2[0] = 9
-console.log(variableArray2) 
+/*for (let counter = 0; counter < claymore.length; counter++) {
+    console.log(`${claymore[counter]}: ${statusMember[counter]}`) //Matches status with Claymore member
+}*/
 
-console.log(variableArray3.length)
+/*for (let counter = 0; counter < claymore.length; counter++) { // Only shows alive members
+    if (statusMember[counter] === "Alive") {
+        console.log(claymore[counter])
+    }
+}*/
 
-let counter = 0
-while (counter <= 5) {
-    console.log(counter)
-    counter = counter + 1 // vagy counter ++
-}
-
-for (let counter = 0; counter <= 5; counter++) {
-    console.log(counter);   
-}
-
-for (let index = 0; index < variableArray.length; index++) {
-    console.log(variableArray[index])
-    
+for (counter = 0; counter < claymore.length; counter ++) {
+    if (claymore[counter].includes("c")) {
+        console.log(`${claymore[counter]} has C in her name`)
+    } else {
+        console.log(`${claymore[counter]} has no C in her name`)
+    }
 }
