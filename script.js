@@ -15,7 +15,7 @@ let statusMember = ["Dead", "Dead", "Alive", "Dead", "Unknown", "Alive", "Alive"
     }
 }*/
 
-for (counter = 0; counter < claymore.length; counter ++) {
+for (counter = 0; counter < claymore.length; counter ++) { //Shows who has C in her name
     if (claymore[counter].includes("c")) {
         console.log(`${claymore[counter]} has C in her name`)
     } else {
